@@ -1,0 +1,31 @@
+#include<stdio.h>
+void main()
+{
+    int monkey,temp,temp1=1,i,j,count=0;
+    scanf("%d",&monkey);
+    printf("%d",monkey);
+    for(i=0;i<monkey;i++)
+    {
+        scanf("%d", &monkey[i]);
+    }
+    for(i=0;i<monkey;i++)
+    {
+        for(j=i+1;j<monkey;i++)
+        if (monkey[j] > monkey[k])
+         {
+            temp = monkey[j];
+            monkey[j] = monkey[k];
+            monkey[k] = temp;
+    }
+    for(i=0;i<monkey;i++)
+    {
+        if(temp1<=1000000)
+        {
+        temp1=temp1*monkey[i];
+        count=count+1;
+        }
+        else{
+            printf(In this position opt out"%d",count);
+        }
+    }
+}
